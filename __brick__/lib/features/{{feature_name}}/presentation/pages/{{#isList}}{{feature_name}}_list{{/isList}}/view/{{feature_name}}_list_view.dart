@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../bloc/{{feature_name}}_list_cubit.dart';
+import '../bloc/{{feature_name}}_list_state.dart';
+
 class {{feature_name.pascalCase()}}ListView extends StatefulWidget {
   const {{feature_name.pascalCase()}}ListView({super.key});
 

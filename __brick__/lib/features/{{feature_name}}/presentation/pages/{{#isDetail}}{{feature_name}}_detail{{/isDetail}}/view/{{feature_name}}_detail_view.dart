@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../bloc/{{feature_name}}_detail_cubit.dart';
+import '../bloc/{{feature_name}}_detail_state.dart';
+
 class {{feature_name.pascalCase()}}DetailView extends StatefulWidget {
   final {{feature_name.pascalCase()}}DetailArguments arguments;
 

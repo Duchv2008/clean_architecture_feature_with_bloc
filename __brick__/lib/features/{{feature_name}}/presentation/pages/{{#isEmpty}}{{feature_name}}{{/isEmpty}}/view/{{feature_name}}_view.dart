@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../bloc/{{feature_name}}_cubit.dart';
+import '../bloc/{{feature_name}}_state.dart';
+
 class {{feature_name.pascalCase()}}View extends StatefulWidget {
   const {{feature_name.pascalCase()}}View({super.key});
 

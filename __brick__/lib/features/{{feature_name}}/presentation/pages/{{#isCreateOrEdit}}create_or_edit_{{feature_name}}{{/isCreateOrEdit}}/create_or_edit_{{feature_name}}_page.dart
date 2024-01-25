@@ -3,14 +3,21 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'view/{{feature_name}}_view.dart';
 
-class CreateOrEditView{{feature_name.pascalCase()}}Page extends StatelessWidget {
-  final {{feature_name.pascalCase()}}Arguments arguments;
+class CreateOrEdit{{feature_name.pascalCase()}}Arguments {
+  CreateOrEdit{{feature_name.pascalCase()}}Arguments();
+}
+
+class CreateOrEdit{{feature_name.pascalCase()}}Page extends StatelessWidget {
+  final CreateOrEdit{{feature_name.pascalCase()}}Arguments arguments;
 
   static Route<void> route() {
-    return MaterialPageRoute<void>(builder: (_) => const CreateOrEditView{{feature_name.pascalCase()}}Page());
+    return MaterialPageRoute<void>(builder: (_) => const CreateOrEdit{{feature_name.pascalCase()}}Page());
   }
 
-  const CreateOrEditView{{feature_name.pascalCase()}}Page({super.key});
+  const CreateOrEdit{{feature_name.pascalCase()}}Page({
+    super.key, 
+    required this.arguments,
+  });
 
   @override
   Widget build(BuildContext context) {

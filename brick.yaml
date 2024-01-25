@@ -1,5 +1,5 @@
 # Name and description of the brick
-name: clean_architecture_feature
+name: clean_architecture_feature_with_bloc
 description: A building block to easily create feature folders using the Clean Architecture approach.
 repository: https://github.com/jigarfumakiya/clean_architecture_feature
 
@@ -19,6 +19,12 @@ vars:
     prompt: "What would you like to name your feature?"
 
   # Use BLoC variable
+  use_bloc:
+    type: boolean
+    description: "Specifies whether the feature should use BLoC for state management."
+    prompt: "Would you like to implement Bloc state management for this feature?"
+
+  # View Type variable
   view_type:
     type: array
     defaults:
@@ -29,7 +35,7 @@ vars:
       - createOrEdit
       - empty
     description: "Please choose presentation page which will generate. Includes index, detail, createOrEdit, empty"
-    prompt: "Choose presentation page?"
+    prompt: "Choose presentation page? Press 'Space' to choose"
 
   # Test directory variable
   test_dir:

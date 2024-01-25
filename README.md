@@ -21,7 +21,9 @@ bricks:
 To use the clean_architecture_feature brick, you can run the following command in your terminal:
 
 ```sh
-mason make clean_architecture_feature
+mason make clean_architecture_feature_with_bloc
+# OR
+mason make clean_architecture_feature_with_bloc --use_bloc true --test_dir false --feature_name user
 ```
 
 ## Variables ✨

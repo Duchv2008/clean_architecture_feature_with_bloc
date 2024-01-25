@@ -6,7 +6,7 @@ part '{{feature_name}}_model.freezed.dart';
 part '{{feature_name}}_model.g.dart';
 
 @freezed
-class {{feature_name.pascalCase()}}Model with _${{{feature_name.pascalCase()}}Model {
+class {{feature_name.pascalCase()}}Model with _${{feature_name.pascalCase()}}Model {
   const {{feature_name.pascalCase()}}Model._();
 
   @JsonSerializable(explicitToJson: true)
@@ -16,10 +16,4 @@ class {{feature_name.pascalCase()}}Model with _${{{feature_name.pascalCase()}}Mo
 
   factory {{feature_name.pascalCase()}}Model.fromJson(Map<String, Object?> json) =>
       _${{feature_name.pascalCase()}}ModelFromJson(json);
-
-  factory {{feature_name.pascalCase()}}Entity.fromModel({{feature_name.pascalCase()}}Model model) {
-    return {{feature_name.pascalCase()}}Entity(
-      id: model.id,
-    );
-  }
 }
