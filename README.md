@@ -1,5 +1,8 @@
 # 🏗️ clean_architecture_feature
 
+# Dependency lib
+Make sure yours project use [flutter_bloc](https://pub.dev/packages/flutter_bloc) and [freezed](https://pub.dev/packages/freezed)
+
 # Installation
 
 Make sure you have Mason installed. If you don't have it installed, follow

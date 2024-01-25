@@ -19,10 +19,17 @@ vars:
     prompt: "What would you like to name your feature?"
 
   # Use BLoC variable
-  use_bloc:
-    type: boolean
-    description: "Specifies whether the feature should use BLoC for state management."
-    prompt: "Would you like to implement Bloc state management for this feature?"
+  view_type:
+    type: array
+    defaults:
+      - empty
+    values:
+      - list
+      - detail
+      - createOrEdit
+      - empty
+    description: "Please choose presentation page which will generate. Includes index, detail, createOrEdit, empty"
+    prompt: "Choose presentation page?"
 
   # Test directory variable
   test_dir:
